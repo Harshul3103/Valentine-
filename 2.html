@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>For Disha ❤️</title>
+
+<style>
+body{
+text-align:center;
+font-family:Arial;
+background:linear-gradient(to right,#ff758c,#ff7eb3);
+color:white;
+padding:40px;
+}
+
+/* Floating hearts */
+.heart{
+position:fixed;
+bottom:-20px;
+font-size:20px;
+animation:floatUp 5s linear infinite;
+}
+
+@keyframes floatUp{
+0%{transform:translateY(0); opacity:1;}
+100%{transform:translateY(-100vh); opacity:0;}
+}
+
+h1{font-size:50px;}
+p{font-size:22px; line-height:1.6;}
+</style>
+</head>
+
+<body>
+
+<h1>Disha ❤️</h1>
+
+<p>
+You are the most beautiful part of my life.<br><br>
+
+Thank you for loving me even when I mess up.<br>
+Thank you for your patience, your warmth, and your endless care.<br><br>
+
+You are my peace, my happiness, and my forever.<br>
+I promise to try harder every day — for us.<br><br>
+
+I love you more than words can ever explain ❤️
+</p>
+
+<script>
+setInterval(()=>{
+let heart=document.createElement("div");
+heart.className="heart";
+heart.innerHTML="❤️";
+heart.style.left=Math.random()*100+"vw";
+heart.style.fontSize=(Math.random()*20+15)+"px";
+document.body.appendChild(heart);
+setTimeout(()=>heart.remove(),5000);
+},300);
+</script>
+
+</body>
+</html>
