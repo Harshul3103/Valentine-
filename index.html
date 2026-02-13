@@ -73,6 +73,22 @@ setTimeout(()=>heart.remove(),5000);
 /* Yes click → fireworks + message */
 function yesClick(){
 
+// Show message + fireworks
+document.body.innerHTML=`
+<h1 style="font-size:50px">I love you endlessly Disha ❤️</h1>
+<h2>You are my forever Valentine</h2>
+<canvas id="fireworks"></canvas>
+`;
+
+startFireworks();
+
+// Redirect after 7 seconds to second page
+setTimeout(()=>{
+window.location.href="love.html";
+},7000);
+
+}
+
 document.body.innerHTML=
 `
 <h1 style="font-size:50px">I love you endlessly Disha ❤️</h1>
